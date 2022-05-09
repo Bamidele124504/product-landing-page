@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+  padding: 0;
+}
+
+
+body{
+    background-color: #eeeeee;
+}
+
+.header-div{
+    display: flex;
+   justify-content: space-between; 
+   width: 100%;
+   position: fixed;
+   top: 0px;
+   height: 10%;
+   background: #eeeeee;
+}
+
+.main-content{
+    padding-top: 66px;
+}
+
+.nav-feature{
+     display: flex;
+    justify-content: space-around; 
+    /* background-color: aqua; */
+    width: 50%;
+}
+.nav-feature a{
+    margin-left: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.section1{
+    
+    text-align:center;
+}
+.section1 p{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.section1 input{
+    height: 25px;
+    width: 40%;
+}
+.section1 button{
+    background-color:#f1c40f;
+    height: 30px;
+    width: 20%;
+
+}
+.section1 button a{
+text-decoration: none;
+font-weight: bolder;
+font-size: 10px;
+color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.container3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iframe{
+   text-align: center;
+}
+
+iframe{
+    width: 80%;  
+}
+
+.trombone{
+    display: flex;
+    justify-content: space-around;
+}
+
+.trombone-div{
+    border: 1px solid black;
+    height: auto;
+    width: 20%;
+    text-align: center;
+    line-height: 30px;
+}
+.trombone-div h3{
+background-color:#dddddd;
+text-align: center;
+font-size: 10px;
+}
+
+.trombone-div button{
+    background-color: yellow;
+    width: 60px;
+}
+.trombone-div button a{
+    text-decoration: none;
+    color: black;
+}
+.trombone-div button:hover{
+    background-color: orangered;
+}
+
+.footer{
+    display: flex;
+    height: 80px;
+    background-color: #ccc7c7;
+    justify-content: flex-end;
+    /* justify-content: space-around; */
+    margin: auto;
+}
+.footer p{
+    padding-right: 20px;
+}
