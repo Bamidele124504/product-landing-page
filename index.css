@@ -14,12 +14,12 @@ body{
    width: 100%;
    position: fixed;
    top: 0px;
-   height: 10%;
+   height: 80px;
    background: #eeeeee;
 }
 
 .main-content{
-    padding-top: 66px;
+    padding-top: 90px;
 }
 
 .nav-feature{
@@ -62,26 +62,28 @@ color: black;
 
 .container{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns:repeat(1,1fr);
     text-align: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
+    width: 100%;
 }
 
 .container1{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around ;
+    align-items: center;
 }
-.container2{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.container1 i{
+    width: 10%;
 }
-.container3{
-    display: flex;
-    justify-content: space-between;
+.container1 span{
+    width: 90%;
 }
 
+.container1 span h1{
+    text-align: center;
+}
 .iframe{
    text-align: center;
 }
@@ -92,7 +94,8 @@ iframe{
 
 .trombone{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
+    width: 100%;
 }
 
 .trombone-div{
@@ -120,14 +123,41 @@ font-size: 10px;
     background-color: orangered;
 }
 
+footer{
+    background-color: #ccc7c7;
+}
+
 .footer{
     display: flex;
     height: 80px;
-    background-color: #ccc7c7;
     justify-content: flex-end;
-    /* justify-content: space-around; */
     margin: auto;
 }
 .footer p{
     padding-right: 20px;
+}
+
+footer h4{
+text-align: center;
+}
+
+@media (max-width:500px) {
+    .trombone{
+     display: block;
+    }
+
+    .trombone-div{
+        width: 80%;
+        line-height: 50px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .container1 i{
+        display: none;
+    }
+
+    .header-div h1{
+        padding-left: 20px;
+    }
 }
